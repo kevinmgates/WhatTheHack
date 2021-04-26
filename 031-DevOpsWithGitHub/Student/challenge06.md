@@ -26,14 +26,16 @@ Extend the workflow you created in Challenge #4 to:
 
 2. Make a small change to your application  (i.e.,`Application/src/RazorPagesTestSample/Pages/Index.cshtml`), commit, push, monitor the workflow and see if the change shows up on the dev instance of the website.
 
-**NOTE**: Normally, we would have you configure [release gates](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/approvals/?view=azure-devops) next - which would require some type of manual approval/human intervention *before* deploying to test and prod respectively. But, as of 10/7/20, GitHub doesn't offer this natively - although it is on the [GitHub roadmap](https://github.com/github/roadmap/issues/99), due to be available by the end of 2020.
+3. Update the workflow to deploy the app to the `test` environment - but only after a manual approval.
 
 ### Success Criteria
 
 1. A small change to `Application/src/RazorPagesTestSample/Pages/Index.cshtml` automatically shows up on the website running in the dev environment (i.e., `<prefix>devops-dev`.azurewebsites.net).
+2. After the app is deployed and validated in `dev`, there is a manual approval step and then the app is deployed to the `test` environment.
 
 ### Learning Resources
 
 - [Deploy a custom container to App Service using GitHub Actions](https://docs.microsoft.com/en-us/azure/app-service/deploy-container-github-action?tabs=service-principal#tabpanel_CeZOj-G++Q-3_service-principal)
+- [Approval workflow for GitHub Actions](https://timheuer.com/blog/add-approval-workflow-to-github-actions/)
 
 [< Previous](challenge05.md) - [Home](../readme.md) - [Next >](challenge07.md)
