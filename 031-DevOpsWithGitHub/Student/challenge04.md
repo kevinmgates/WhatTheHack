@@ -18,7 +18,7 @@ Review the following articles:
 
 In this challenge, you will build and test the .NET Core application.
 
-1. Create a new `.NET` workflow from the GitHub Actions marketplace. In your repo, click on Actions in the top menu > New Workflow (button) > scroll down to the 'Continuous integration workflows' section and setup the '.NET' action.
+1. Create a new `.NET` workflow from the GitHub Actions marketplace. In your repo, click on Actions in the top menu > New Workflow (button) > scroll down to the 'Continuous integration workflows' section and setup the [.NET](https://github.com/actions/starter-workflows/blob/dacfd0a22a5a696b74a41f0b49c98ff41ef88427/ci/dotnet-core.yml) action.
 
 2. Review the layout of the workflow. There is a single job (named 'build') with multiple steps (restore, build, test).
 
