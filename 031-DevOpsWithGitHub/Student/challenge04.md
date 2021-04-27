@@ -22,7 +22,7 @@ In this challenge, you will build and test the .NET Core application.
 
 2. Review the layout of the workflow. There is a single job (named 'build') with multiple steps (restore, build, test).
 
-3. In your workflow, under the "Setup .NET Core" step, change the .NET version to `2.2` to match the version defined by the application.
+3. In your workflow, under the "Setup .NET" step, REMOVE the `with:` and `dotnet-version: x.x.x` lines
 
 4. Configure path filters to *only* trigger this workflow for changes in the `/Application` folder.
 
