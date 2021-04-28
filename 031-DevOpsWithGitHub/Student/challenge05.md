@@ -44,6 +44,7 @@ In this challenge, you will build and push a docker image to ACR:
 ### Success Criteria
 
 - A new container image is built, uniquely tagged and pushed to ACR after each successful workflow run.
+- The docker login, build and push doesn't start until the first job (.net build) completes successfully.
 
 ### Learning Resources
 
