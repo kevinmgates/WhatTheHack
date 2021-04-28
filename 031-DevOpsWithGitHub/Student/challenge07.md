@@ -14,7 +14,9 @@ In this challenge, you will practice this flow. Additionally, GitHub offers a fe
 
 ### Challenge
 
-1. Create a branch protection rule which prevents developers from commiting changes to the main branch in the repository.
+1. Create a branch protection rule which:
+    - Prevents developers from commiting changes to the main branch in the repository
+    - Requires a status check to pass: your .NET build job from your CI pipeline
 
 2. Create a feature branch, make a small change to the code (i.e.,`/Application/aspnet-core-dotnet-core/Views/Home/Index.cshtml`), and sync this branch with the GitHub repository.
 
