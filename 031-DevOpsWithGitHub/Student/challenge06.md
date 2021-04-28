@@ -16,17 +16,18 @@ In this challenge, we will use GitHub Actions to deploy our container image to t
 
 **OPTIONAL**: Use your code editor (VS Code) to update your workflow file locally on your machine. Remember to commit and push any changes.
 
-Extend the workflow you created in Challenge #4 to:
+Extend the workflow you created in Challenge #5:
+1. Create a new job. Make sure it doesn't run until the previous jobs complete.
 
-1. Configure your `dev` environment to pull the latest container image from ACR. 
+2. Configure your `dev` environment (App Service) to pull the latest container image from ACR. 
    - Login to Azure using your service principal, if needed ([hint](https://docs.microsoft.com/en-us/azure/app-service/deploy-container-github-action?tabs=service-principal#tabpanel_CeZOj-G++Q-3_service-principal))
    - Use the `Azure/webapps-deploy@v2` [action](https://github.com/Azure/webapps-deploy) to update the Web App to pull the latest image from ACR. Key parameters to configure:
       - `app-name` - the name of the wep app instance to target
       - `images` - the path to the image you pushed to ACR
 
-2. Make a small change to your application  (i.e.,`Application/src/RazorPagesTestSample/Pages/Index.cshtml`), commit, push, monitor the workflow and see if the change shows up on the dev instance of the website.
+3. Make a small change to your application  (i.e.,`Application/src/RazorPagesTestSample/Pages/Index.cshtml`), commit, push, monitor the workflow and see if the change shows up on the dev instance of the website.
 
-3. Update the workflow to deploy the app to the `test` environment - but only after a manual approval.
+4. Update the workflow to deploy the app to the `test` environment (App Service) - but *only* after a manual approval.
 
 ### Success Criteria
 
@@ -39,5 +40,9 @@ Extend the workflow you created in Challenge #4 to:
 - [Approval workflow for GitHub Actions](https://timheuer.com/blog/add-approval-workflow-to-github-actions/)
 - [Workflow syntax for environments](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idenvironment)
 - [Environment protection rules](https://docs.github.com/en/github-ae@latest/actions/reference/environments#environment-protection-rules)
+
+### Advanced Challenges (Optional)
+
+1. Update the workflow to deploy the app to the `prod` environment *after* it is deployed to the test environment - but *only* after a manual approval.
 
 [< Previous](challenge05.md) - [Home](../readme.md) - [Next >](challenge07.md)
