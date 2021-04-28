@@ -41,7 +41,7 @@ Extend the workflow you created in Challenge #5:
 - [Workflow syntax for environments](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idenvironment)
 - [Environment protection rules](https://docs.github.com/en/github-ae@latest/actions/reference/environments#environment-protection-rules)
 
-### Advanced Challenges (Optional)
+### Advanced Challenges (optional)
 
 1. Update the workflow to deploy the app to the `prod` environment *after* it is deployed to the test environment - but *only* after a manual approval.
 
