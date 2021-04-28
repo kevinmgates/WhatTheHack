@@ -35,7 +35,7 @@ In this challenge, you will build and push a docker image to ACR:
 
 5. Configure the job to start ONLY after the first job completes.
 
-6. To authenticate to the registry, add a step named `Docker login` with the following as the `run` command: `docker login $registryName -u ACR_USERNAME -p ACR_PASSWORD` - replacing ACR_USERNAME and ACR_PASSWORD with the secrets.
+6. To authenticate to the registry, add a step named `Docker login` with the following as the `run` command: `docker login $registryName -u ${{ secrets.ACR_USERNAME }} -p ${{ secrets.ACR_PASSWORD }}`.
 
 7. To build your image, add a step named `Docker build` with the following as the `run` command: `docker build -t $registryName/$repositoryName:$tag --build-arg build_version=$tag $dockerFolderPath`
 
