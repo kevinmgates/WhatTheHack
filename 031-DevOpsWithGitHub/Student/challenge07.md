@@ -18,7 +18,7 @@ In this challenge, you will practice this flow. Additionally, GitHub offers a fe
     - Prevents developers from commiting changes to the main branch in the repository
     - Requires a status check to pass: your .NET build job from your CI pipeline
 
-2. Create a feature branch, make a small change to the code (i.e.,`/Application/aspnet-core-dotnet-core/Views/Home/Index.cshtml`), and sync this branch with the GitHub repository.
+2. Create a feature branch, make a small change to the code (i.e.,`Application/src/RazorPagesTestSample/Pages/Index.cshtml`), and sync this branch with the GitHub repository.
 
 3. Define a code owner for the `/Application` directory. Your branch policy should require a review from the code owner.
 
@@ -28,7 +28,7 @@ In this challenge, you will practice this flow. Additionally, GitHub offers a fe
 
 - You have a branch protection rule which prevents changes from being commited to your main branch.
 
-- Changes to the application (i.e.,`/Application/aspnet-core-dotnet-core/Views/Home/Index.cshtml`) are committed to a feature branch.
+- Changes to the application (i.e.,`Application/src/RazorPagesTestSample/Pages/Index.cshtml`) are committed to a feature branch.
 
 - Before a pull request is completed:
     - A code owner must approve the changes ([hint](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/about-code-owners))
