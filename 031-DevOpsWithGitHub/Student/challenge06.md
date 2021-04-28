@@ -37,5 +37,7 @@ Extend the workflow you created in Challenge #4 to:
 
 - [Deploy a custom container to App Service using GitHub Actions](https://docs.microsoft.com/en-us/azure/app-service/deploy-container-github-action?tabs=service-principal#tabpanel_CeZOj-G++Q-3_service-principal)
 - [Approval workflow for GitHub Actions](https://timheuer.com/blog/add-approval-workflow-to-github-actions/)
+- [Workflow syntax for environments](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idenvironment)
+- [Environment protection rules](https://docs.github.com/en/github-ae@latest/actions/reference/environments#environment-protection-rules)
 
 [< Previous](challenge05.md) - [Home](../readme.md) - [Next >](challenge07.md)
