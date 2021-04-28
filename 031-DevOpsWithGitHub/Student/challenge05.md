@@ -33,13 +33,15 @@ In this challenge, you will build and push a docker image to ACR:
 
 4. Make sure the first step in your second job includes `- uses: actions/checkout@v2`
 
-5. To authenticate to the registry, add a step named `Docker login` with the following as the `run` command: `docker login $registryName -u ACR_USERNAME -p ACR_PASSWORD` - replacing ACR_USERNAME and ACR_PASSWORD with the secrets.
+5. Configure the job to start ONLY after the first job completes.
 
-6. To build your image, add a step named `Docker build` with the following as the `run` command: `docker build -t $registryName/$repositoryName:$tag --build-arg build_version=$tag $dockerFolderPath`
+6. To authenticate to the registry, add a step named `Docker login` with the following as the `run` command: `docker login $registryName -u ACR_USERNAME -p ACR_PASSWORD` - replacing ACR_USERNAME and ACR_PASSWORD with the secrets.
 
-7. To push your image to ACR, add a step named `Docker push` with the following as the `run` command: `docker push $registryName/$repositoryName:$tag`
+7. To build your image, add a step named `Docker build` with the following as the `run` command: `docker build -t $registryName/$repositoryName:$tag --build-arg build_version=$tag $dockerFolderPath`
 
-8. Test the workflow by making a small change to the application code (i.e., add a comment). Commit, push, monitor the workflow and verify that a new container image is built, uniquely tagged and pushed to ACR after each successful workflow run.
+8. To push your image to ACR, add a step named `Docker push` with the following as the `run` command: `docker push $registryName/$repositoryName:$tag`
+
+9. Test the workflow by making a small change to the application code (i.e., add a comment). Commit, push, monitor the workflow and verify that a new container image is built, uniquely tagged and pushed to ACR after each successful workflow run.
 
 ### Success Criteria
 
