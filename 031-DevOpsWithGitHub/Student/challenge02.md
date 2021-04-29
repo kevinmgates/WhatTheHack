@@ -14,14 +14,14 @@ Now that we have a basic understanding of version control and Git, lets get some
 
 1. Begin by cloning the GitHub repository you created in the [first challenge](challenge01.md) to your local computer ([hint](https://help.github.com/en/articles/cloning-a-repository)).
 
-2. Next, obtain the code (sample application and ARM template) from the Resource files provided by your coach.
+2. Next, obtain the code (sample application and ARM template) from your coach.
 
 3. Finally, commit the files to your GitHub repository using your preferred Git client.
 
 ### Success Criteria
 
 - Your repo is cloned to your local machine and sync'd with GitHub.com
-- The "Application" and "ArmTemplates" folders are at the root of your repository
+- The "Application" and "ARM-Templates" folders are at the *root* of your repository
 
 ### Learning Resources
 
