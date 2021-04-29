@@ -19,7 +19,7 @@ Review the following introduction to GitHub project boards: [GitHub project boar
 
 ### Challenge
 
-1. Ensure GitHub issues are enabled for your repo. This will allow you to create issues and put them on the project board. 
+1. Create a new GitHub repo for your team and make sure GitHub issues are enabled. This will allow you to create issues and put them on the project board. 
 
 2. Add collaborators from your team to your repo. 
 
