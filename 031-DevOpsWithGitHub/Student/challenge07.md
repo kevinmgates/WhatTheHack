@@ -38,7 +38,7 @@ In this challenge, you will practice this flow. Additionally, GitHub offers a fe
 
 ### Learning Resources
 
-- General information about protected branches can be found [here](https://docs.github.com/en/github/administering-a-repository/about-protected-branches), with more configuration specifics [here](https://docs.github.com/en/github/administering-a-repository/configuring-protected-branches).
+- General information about protected branches can be found [here](https://docs.github.com/en/github/administering-a-repository/about-protected-branches), with more configuration specifics [here](https://docs.github.com/en/github/administering-a-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule).
 - General information about branches can be found [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-branches), with more specifics about creation and deletion [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-and-deleting-branches-within-your-repository).
 - General information about pull requests can be found [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests), with more specifics about [creating](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) and [reviewing](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/reviewing-changes-in-pull-requests).
 - [About code owners](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/about-code-owners)
